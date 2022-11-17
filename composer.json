@@ -1,20 +1,42 @@
 {
   "name": "wiraizkandar/readable-number",
   "description": "Human Readable Number",
-  "minimum-stability": "stable",
+  "keywords": [
+    "wiraizkandar",
+    "readable-number"
+  ],
+  "homepage": "https://github.com/wiraizkandar/readable-number",
   "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "wiraizkandar\\ReadableNumber\\": "src/"
-    }
-  },
+  "type": "library",
   "authors": [
     {
-      "name": "wiraizkandar",
-      "email": "wiraizkandar1@gmail.com"
+      "name": "Wira Izkandar",
+      "email": "wiraizkandar1@gmail.com",
+      "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=7.4"
+    "php": "^7.4|^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wiraizkandar\\ReadableNumber\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wiraizkandar\\ReadableNumber\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+  },
+  "config": {
+    "sort-packages": true
   }
 }
