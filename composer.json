@@ -1,0 +1,20 @@
+{
+  "name": "wiraizkandar/readable-number",
+  "description": "Human Readable Number",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "wiraizkandar\\ReadableNumber\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "wiraizkandar",
+      "email": "wiraizkandar1@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+  }
+}
