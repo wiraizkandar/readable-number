@@ -2,7 +2,7 @@
 
 namespace Wiraizkandar\ReadableNumber;
 
-class ReadableNumber
+class HumanNumber
 {
 	/**
 	 * @param int $number
