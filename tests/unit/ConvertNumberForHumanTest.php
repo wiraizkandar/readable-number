@@ -3,7 +3,6 @@
 namespace Wiraizkandar\ReadableNumber;
 
 use PHPUnit\Framework\TestCase;
-use Wiraizkandar\ReadableNumber\HumanNumber;
 
 class ConvertNumberForHumanTest extends TestCase
 {
@@ -34,5 +33,11 @@ class ConvertNumberForHumanTest extends TestCase
     {
         $number = 1000000000;
         $this->assertTrue(HumanNumber::numberForHumans($number) === '1B');
+    }
+
+    public function test_convert_to_billion_with_decimal()
+    {
+        $number = 1500000000;
+        $this->assertTrue(HumanNumber::numberForHumans($number) === '1.5B');
     }
 }
