@@ -8,7 +8,7 @@ class HumanNumber
      * @param int $number
      * @return string
      */
-    public static function numberForHuman(int $number, int $maxDecimal = 1): string
+    public static function numberToShortForm(int $number, int $maxDecimal = 1): string
     {
         $totalSeparator = count(explode(",", (string)number_format($number))) - 1;
         switch ($totalSeparator) {

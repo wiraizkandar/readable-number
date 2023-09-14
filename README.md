@@ -1,11 +1,17 @@
-Human Short Readable Number Converter
+Readable Number Converter For Human
 =======
+
+To Install
+-------
+```
+composer require wiraizkandar/readable-number
+```
 
 Example
 -------
-```php
-HumanNumber::numberForHuman(1200000)
+
+> HumanNumber::numberToShortForm(1200000)
 -- Output : '1.2M'
 
-HumanNumber::numberForHuman(1500000000)
+> HumanNumber::numberToShortForm(1500000000)
 -- Output : '1.5B'
